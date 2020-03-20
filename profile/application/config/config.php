@@ -23,7 +23,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://www.adefathudin.com/profile/';
+
+switch(ENVIRONMENT){
+    
+    case 'production':
+        $config['base_url'] = 'https://www.adefathudin.com/profile/';
+        break;
+    case 'testing':
+        $_url = isset($_SERVER['HTTPS']) ? 'https://':'http://';
+        $_url .= $_SERVER['SERVER_NAME'];
+        $_url .= isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] != 80 ? ':'.$_SERVER['SERVER_PORT']:'';
+        
+        $config['base_url'] = $_url;
+        break;
+    case 'development':
+        $config['base_url'] = 'http://localhost/adefathudin/index/profile/';
+        break;
+    default:
+        $config['base_url'] = 'http://localhost/adefathudin/index/profile';
+}
+
 
 /*
 |--------------------------------------------------------------------------

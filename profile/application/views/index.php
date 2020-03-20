@@ -29,7 +29,7 @@
     <meta property='og:site_name' content='Ade Fathudin'>
     <meta property='og:locale' content='id'>
     <meta property='og:url' content="https://www.adefathudin.com">
-    <meta property='og:image' content='https://adefathudin.com/images/profile-pic-no-compress.jpg'>
+    <meta property='og:image' content='<?= base_url() ?>images/profile-pic-no-compress.jpg'>
     <meta property='og:title' content="Ade Fathudin">
     <meta property='og:description' content="Ade Fathudin | Official Website">
     
