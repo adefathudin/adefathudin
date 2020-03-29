@@ -63,7 +63,7 @@
         $this->load->view('resume');
         $this->load->view('portfolio');
         $this->load->view('contact');
-        $this->load->view('blog');
+        //$this->load->view('blog');
         $this->load->view('footer');
         ?>
 

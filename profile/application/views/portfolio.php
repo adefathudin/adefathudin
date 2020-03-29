@@ -8,7 +8,7 @@
             <h5>Portfolio</h5>
             <h1>Check Out Some of My Works.</h1>
 
-            <p class="lead">This is my project and my creativity<br>My other project can be found at <a href='https://github.com/adefathudin' target='_blank'>https://github.com/adefathudin</a>
+            <p class="lead">This is my project and my creativity<br>My other project can be found at <a href='https://github.com/adefathudin' target='_blank'><i class="fa fa-github"></i> https://github.com/adefathudin</a>
             </p>
 
         </div>   		
